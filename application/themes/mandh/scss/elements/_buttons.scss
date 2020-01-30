@@ -1,0 +1,43 @@
+.button{
+    display: inline-block;
+    padding: 15px 40px;
+    text-decoration: none;
+    border-radius: 10px;
+
+    &:hover{
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    &.black{
+        border: 1px solid black;
+        transition: all 0.3s ease-in-out;
+        color: white;
+        background-color: black;
+        
+        &:hover{
+            background-color: white;
+            color: black;
+        }
+    }
+
+    &.white{
+        border: 1px solid black;
+        color: black;
+        background-color: white;
+        transition: all 0.3s ease-in-out;
+
+        &:hover{
+            background-color: black;
+            color: white;
+        }
+    }
+
+    
+    &.white.no-hover{
+        &:hover{
+            background-color: white;
+            color: black;
+        }
+    }
+}

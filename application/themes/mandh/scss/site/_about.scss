@@ -1,0 +1,54 @@
+.hero{
+    height: 65vh;
+    background-color: black;
+    position: relative;
+    &::after{
+        content: ' ';
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    &-content{
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -70%);
+        color: white;
+    }    
+
+}
+
+.full-width_cta{
+    display: flex;
+
+    &.reverse{
+        flex-direction: row-reverse;
+    }
+
+    .image-container{
+        width: 50%;
+        position: relative;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    .content-container{
+        width: 50%;
+        background-color: #252525;
+        color: white;
+        position: relative;
+
+        .content-container_inner{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 75%;
+        }
+    }
+}
+
+.double-column{
+    margin: 100px 0;
+}

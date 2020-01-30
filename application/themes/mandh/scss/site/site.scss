@@ -1,0 +1,16 @@
+//Site styling
+@import "home",
+        "about",
+        "gallery",
+        "contact";
+
+//Plugins
+@import "../plugins/slick",
+        "../plugins/_slick-theme.scss";
+
+//global styling
+@import "../elements/header",
+        "../elements/footer",
+        "../elements/typography",
+        "../elements/buttons",
+        "../elements/form";

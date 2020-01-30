@@ -1,0 +1,50 @@
+footer{
+    background-color: #252525;
+    min-height: 300px;
+    position: relative;
+
+    .footer-nav{
+        color: white;
+        padding: 75px 0 0;
+        border-bottom: 1px solid white;
+        max-width: 800px;
+        margin: auto;
+
+        ul{
+            list-style: none;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+            li{
+                margin: 0 15px;
+
+                a{
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+        
+    .footer-logo{
+        text-align: center;
+        margin: 50px;
+    }
+
+    .footer-items{
+        display: flex;
+        color: white;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0 50px 15px;
+
+        p,
+        a{
+            margin: 0 15px 0 0;
+            color: white;
+
+        }
+    }
+}

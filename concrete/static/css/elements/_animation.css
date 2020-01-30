@@ -1,0 +1,8 @@
+@-webkit-keyframes scale {
+  to {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2); } }
+@keyframes scale {
+  to {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2); } }
