@@ -59,23 +59,34 @@
                 </div>
 
             </div>
+        </div>
 
-            <div class="col-12 col-md-3 offset-md-1">
+        <div id="meettheteam" class="meet-team">
 
-                <h2 style="text-align: center;">Meet the team</h2>
+            <div class="row justify-content-md-center">
+            
+                <div class="col-12">
 
-                <div class="team-member"> 
-                    <?php $a = new Area('Team member photo'); $a->display($c); ?> 
-                    <?php $a = new Area('Team Member Name'); $a->display($c); ?>
-                    <?php $a = new Area('Team Member Number'); $a->display($c); ?>
-                    <?php $a = new Area('Team Member Email'); $a->display($c); ?> 
-                </div>
+                    <h2>Meet the team</h2>
 
-                <div class="team-member"> 
-                    <?php $a = new Area('Team member photo 2'); $a->display($c); ?> 
-                    <h3><?php $a = new Area('Team Member Name 2'); $a->display($c); ?></h3>
-                    <?php $a = new Area('Team Member Number 2'); $a->display($c); ?>
-                    <?php $a = new Area('Team Member Email 2'); $a->display($c); ?> 
+                    <div class="team-container"> 
+
+                        <div class="team-member"> 
+                            <?php $a = new Area('Team member photo'); $a->display($c); ?> 
+                            <?php $a = new Area('Team Member Name'); $a->display($c); ?>
+                            <?php $a = new Area('Team Member Number'); $a->display($c); ?>
+                            <?php $a = new Area('Team Member Email'); $a->display($c); ?> 
+                        </div>
+
+                        <div class="team-member"> 
+                            <?php $a = new Area('Team member photo 2'); $a->display($c); ?> 
+                            <?php $a = new Area('Team Member Name 2'); $a->display($c); ?>
+                            <?php $a = new Area('Team Member Number 2'); $a->display($c); ?>
+                            <?php $a = new Area('Team Member Email 2'); $a->display($c); ?> 
+                        </div>
+
+                    </div>
+
                 </div>
 
             </div>

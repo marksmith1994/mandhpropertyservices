@@ -28,8 +28,8 @@
             </div>
 
             <div class="social-icons">
-                <a href=""><svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg></a>
-                <a href=""><svg class="icon icon-instagram"><use xlink:href="#icon-instagram"></use></svg></a>
+                <a href="https://www.facebook.com/mandhpropertyservices/"><svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg></a>
+                <a href="https://www.instagram.com/mandhpropertyservices/"><svg class="icon icon-instagram"><use xlink:href="#icon-instagram"></use></svg></a>
             </div>
 
         </div>

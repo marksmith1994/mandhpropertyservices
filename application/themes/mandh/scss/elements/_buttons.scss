@@ -3,6 +3,8 @@
     padding: 15px 40px;
     text-decoration: none;
     border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
 
     &:hover{
         text-decoration: none;
@@ -10,25 +12,25 @@
     }
     
     &.black{
-        border: 1px solid black;
+        border: 1px solid #222222;
         transition: all 0.3s ease-in-out;
         color: white;
-        background-color: black;
+        background-color: #222222;
         
         &:hover{
-            background-color: white;
-            color: black;
+            color: white;
+            background-color: #000000;
         }
     }
 
     &.white{
-        border: 1px solid black;
-        color: black;
+        border: 1px solid #222222;
+        color: #222222;
         background-color: white;
         transition: all 0.3s ease-in-out;
 
         &:hover{
-            background-color: black;
+            background-color: #222222;
             color: white;
         }
     }
@@ -37,7 +39,7 @@
     &.white.no-hover{
         &:hover{
             background-color: white;
-            color: black;
+            color: #222222;
         }
     }
 }

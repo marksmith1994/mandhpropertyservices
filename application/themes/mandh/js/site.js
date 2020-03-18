@@ -3,7 +3,7 @@
 $(document).ready(function () {
     $('body').addClass('loaded');
 
-}
+});
 
 $('.home-slider').slick({
     dots: true,
