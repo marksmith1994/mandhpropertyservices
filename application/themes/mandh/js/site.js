@@ -1,5 +1,10 @@
 //@prepros-prepend plugins/slick.js
 
+$(document).ready(function () {
+    $('body').addClass('loaded');
+
+}
+
 $('.home-slider').slick({
     dots: true,
     infinite: true,

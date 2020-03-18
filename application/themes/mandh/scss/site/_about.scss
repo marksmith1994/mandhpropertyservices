@@ -30,6 +30,8 @@
 
         img{
             width: 100%;
+            max-height: 600px;
+            object-fit: cover;
         }
     }
 
@@ -51,4 +53,16 @@
 
 .double-column{
     margin: 100px 0;
+    text-align: center;
+
+}
+
+.review-block{
+    text-align: center;
+    padding: 25px;
+    margin: 75px 0 50px;
+    border-radius: 25px;
+    -webkit-box-shadow: 0px 0px 25px 10px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 25px 10px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 25px 10px rgba(0,0,0,0.15);
 }

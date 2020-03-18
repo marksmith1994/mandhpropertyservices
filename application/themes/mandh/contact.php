@@ -3,7 +3,9 @@
 <div class="hero">
 
     <div class="hero-content">
-        <h1>Contact Us</h1>
+        <?php
+            echo '<h1>' . $c->getCollectionName() . '</h1>';
+        ?>
     </div>
 
 </div>
@@ -63,17 +65,17 @@
                 <h2 style="text-align: center;">Meet the team</h2>
 
                 <div class="team-member"> 
-                    <img src="https://via.placeholder.com/200x200" />  
-                    <h3>Huw Jarrett</h3>
-                    <p>07777777777</p>
-                    <p><a href="mailto:huw@huw.com">huw@huw.com</a></p>
+                    <?php $a = new Area('Team member photo'); $a->display($c); ?> 
+                    <?php $a = new Area('Team Member Name'); $a->display($c); ?>
+                    <?php $a = new Area('Team Member Number'); $a->display($c); ?>
+                    <?php $a = new Area('Team Member Email'); $a->display($c); ?> 
                 </div>
 
                 <div class="team-member"> 
-                    <img src="https://via.placeholder.com/200x200" />  
-                    <h3>Mark Name</h3>
-                    <p>07777777777</p>
-                    <p><a href="mailto:huw@huw.com">mark@mark.com</a></p>
+                    <?php $a = new Area('Team member photo 2'); $a->display($c); ?> 
+                    <h3><?php $a = new Area('Team Member Name 2'); $a->display($c); ?></h3>
+                    <?php $a = new Area('Team Member Number 2'); $a->display($c); ?>
+                    <?php $a = new Area('Team Member Email 2'); $a->display($c); ?> 
                 </div>
 
             </div>

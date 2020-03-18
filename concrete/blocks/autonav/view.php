@@ -127,6 +127,7 @@ foreach ($navItems as $ni) {
 
 if (count($navItems) > 0) {
     echo '<ul class="nav">'; //opens the top-level menu
+    echo '<li><a href="http://localhost/concrete5-8.5.2/">Home</a></li>';
 
     foreach ($navItems as $ni) {
         echo '<li class="' . $ni->classes . '">'; //opens a nav item

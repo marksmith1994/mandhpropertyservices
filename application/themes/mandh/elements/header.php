@@ -1,3 +1,4 @@
+<?php defined('C5_EXECUTE') or die("Access Denied.");?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,26 +10,30 @@
     <link rel="stylesheet" href="<?= $view->getThemePath() ?>/css/site.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+     <?php Loader::element('header_required') ?> 
 </head>
-<body>
 
+<body>
+<div class="<?= $c->getPageWrapperClass() ?>">
 <header>
     <div class="main-logo">
         <a href="/"><img src="https://via.placeholder.com/150x100" /></a>
     </div>
 
     <div class="main-nav">
-        
-        <nav>
-            <ul>
-                <li><a href="http://localhost/concrete5-8.5.2/concrete/static/">Home</a></li>
-                <li><a href="http://localhost/concrete5-8.5.2/concrete/static/about.php">About Us</a></li>
-                <li><a href="http://localhost/concrete5-8.5.2/concrete/static/gallery.php">Gallery</a></li>
-                <li><a href="http://localhost/concrete5-8.5.2/concrete/static/contact.php">Contact Us</a></li>
-            </ul>
-        </nav>
+
+            <?php
+               $nav = BlockType::getByHandle('autonav');
+               $nav->controller->orderBy = 'display_asc';
+               $nav->controller->displayPages = 'top';
+               $nav->controller->displaySubPages = 'all';
+               $nav->controller->displaySubPageLevels = 'custom';
+               $nav->controller->displaySubPageLevelsNum = 1;
+               $nav->render('templates/header_menu.php');
+            ?>
 
     </div>
+    
 </header>
 
 <svg style="position: absolute; width: 0; height: 0;" aria-hidden="true">

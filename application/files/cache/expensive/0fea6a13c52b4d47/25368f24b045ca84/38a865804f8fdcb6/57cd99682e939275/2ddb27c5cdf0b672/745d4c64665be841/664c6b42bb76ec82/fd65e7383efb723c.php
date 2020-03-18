@@ -1,12 +1,12 @@
 <?php 
 /* Cachekey: cache/stash_default/doctrine/[concrete\core\entity\express\entry$entryformatter@[annot]][1]/ */
 /* Type: array */
-/* Expiration: 2020-02-04T22:14:43+00:00 */
+/* Expiration: 2020-02-23T07:18:59+00:00 */
 
 
 
 $loaded = true;
-$expiration = 1580854483;
+$expiration = 1582442339;
 
 $data = array();
 
@@ -14,4 +14,4 @@ $data = array();
 $data['return'] = unserialize(base64_decode('YTowOnt9'));
 
 /* Child Type: integer */
-$data['createdOn'] = 1580423316;
+$data['createdOn'] = 1582061172;

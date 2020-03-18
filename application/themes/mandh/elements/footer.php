@@ -1,15 +1,20 @@
         
+    </div>
+    <?php Loader::element('footer_required'); ?>
     </body>
-    <script src="js/site-dist.js"></script>
+    <script type="text/javascript" src="<?= $view->getThemePath() ?>/js/site-dist.js"></script>
 
     <footer>
         <div class="footer-nav">
-            <ul>
-                <li><a href="http://localhost/concrete5-8.5.2/concrete/static/">Home</a></li>
-                <li><a href="http://localhost/concrete5-8.5.2/concrete/static/about.php">About Us</a></li>
-                <li><a href="http://localhost/concrete5-8.5.2/concrete/static/gallery.php">Gallery</a></li>
-                <li><a href="http://localhost/concrete5-8.5.2/concrete/static/contact.php">Contact Us</a></li>
-            </ul>
+            <?php
+               $nav = BlockType::getByHandle('autonav');
+               $nav->controller->orderBy = 'display_asc';
+               $nav->controller->displayPages = 'top';
+               $nav->controller->displaySubPages = 'all';
+               $nav->controller->displaySubPageLevels = 'custom';
+               $nav->controller->displaySubPageLevelsNum = 1;
+               $nav->render('templates/header_menu.php');
+            ?>
         </div>
 
         <div class="footer-logo">
