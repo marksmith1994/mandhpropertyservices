@@ -10,6 +10,10 @@ header{
 
     .main-nav{
 
+        @media only screen and (max-width: 800px) {
+            display: none;
+        }
+
         ul{
             list-style: none;
             padding: 0;

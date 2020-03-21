@@ -110,13 +110,13 @@
 
         <div class="row justify-content-md-center">
 
-            <div class="col-12 col-md-8">
+            <div class="col-12 col-md-10 col-lg-8">
 
                 <div class="contact-box-container">
 
-                <h2>Like what you see?</h2>
-                <p>Click the link below and get in touch, we can help you out with any problem big or small!</p>
-                <a href="/contact" class="button white no-hover">Contact us</a>
+                    <h2>Like what you see?</h2>
+                    <p>Click the link below and get in touch, we can help you out with any problem big or small!</p>
+                    <a href="/contact" class="button white no-hover">Contact us</a>
 
                 </div>
 

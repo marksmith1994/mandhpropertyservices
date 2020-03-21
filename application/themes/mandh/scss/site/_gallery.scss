@@ -4,7 +4,7 @@
     display: flex;
     flex-wrap: wrap;
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 850px) {
         margin: 15px auto;
     }
 
@@ -13,7 +13,7 @@
         position: relative;
         margin: 15px;
 
-        @media only screen and (max-width: 600px) {
+        @media only screen and (max-width: 850px) {
             width: 100%;
         }
 

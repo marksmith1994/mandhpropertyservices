@@ -20,8 +20,14 @@
         <a href="/"><img src="https://via.placeholder.com/150x100" /></a>
     </div>
 
-    <div class="main-nav">
+    <div class="button_container" id="toggle">
+        <span class="top"></span>
+        <span class="middle"></span>
+        <span class="bottom"></span>
+    </div>
 
+    <div class="overlay" id="overlay">
+        <nav class="overlay-menu">
             <?php
                $nav = BlockType::getByHandle('autonav');
                $nav->controller->orderBy = 'display_asc';
@@ -30,6 +36,20 @@
                $nav->controller->displaySubPageLevels = 'custom';
                $nav->controller->displaySubPageLevelsNum = 1;
                $nav->render('templates/header_menu.php');
+            ?>
+        </nav>
+    </div>
+
+    <div class="main-nav">
+
+            <?php
+                $nav = BlockType::getByHandle('autonav');
+                $nav->controller->orderBy = 'display_asc';
+                $nav->controller->displayPages = 'top';
+                $nav->controller->displaySubPages = 'all';
+                $nav->controller->displaySubPageLevels = 'custom';
+                $nav->controller->displaySubPageLevelsNum = 1;
+                $nav->render('templates/header_menu.php');
             ?>
 
     </div>

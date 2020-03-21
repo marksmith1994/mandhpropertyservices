@@ -3,7 +3,7 @@
     background-color: black;
     position: relative;
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 850px) {
         height: 50vh;
     }
 
@@ -25,14 +25,14 @@
 .full-width_cta{
     display: flex;
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 850px) {
         flex-direction: column;
     }
 
     &.reverse{
         flex-direction: row-reverse;
 
-        @media only screen and (max-width: 600px) {
+        @media only screen and (max-width: 850px) {
             flex-direction: column;
         }
     }
@@ -41,7 +41,7 @@
         width: 50%;
         position: relative;
 
-        @media only screen and (max-width: 600px) {
+        @media only screen and (max-width: 850px) {
             width: 100%;
         }
 
@@ -50,7 +50,7 @@
             max-height: 600px;
             object-fit: cover;
 
-            @media only screen and (max-width: 600px) {
+            @media only screen and (max-width: 850px) {
                 max-height: 400px;
             }
         }
@@ -62,7 +62,7 @@
         color: white;
         position: relative;
 
-        @media only screen and (max-width: 600px) {
+        @media only screen and (max-width: 850px) {
             width: 100%;
         }
 
@@ -73,7 +73,7 @@
             transform: translate(-50%, -50%);
             width: 75%;
 
-            @media only screen and (max-width: 600px) {
+            @media only screen and (max-width: 850px) {
                 width: 100%;
                 position: relative;
                 top: auto;

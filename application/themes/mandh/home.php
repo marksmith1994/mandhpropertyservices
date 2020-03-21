@@ -38,7 +38,7 @@
 
         <div class="row justify-content-md-center">
 
-            <div class="col-12 col-md-8">
+            <div class="col-12 col-lg-8">
 
                 <?php
                     $a = new Area('Introduction');
@@ -98,7 +98,7 @@
 
     <div class="row justify-content-md-center no-gutters">
 
-        <div class="col-12 col-md-3">
+        <div class="col-12 col-md-6 col-lg-3">
 
             <div class="product-item">
 
@@ -115,7 +115,7 @@
 
         </div>
 
-        <div class="col-12 col-md-3">
+        <div class="col-12 col-md-6 col-lg-3">
 
             <div class="product-item">
 
@@ -132,7 +132,7 @@
 
         </div>
 
-        <div class="col-12 col-md-3">
+        <div class="col-12 col-md-6 col-lg-3">
 
             <div class="product-item">
 
@@ -149,7 +149,7 @@
         
         </div>
 
-        <div class="col-12 col-md-3">
+        <div class="col-12 col-md-6 col-lg-3">
 
             <div class="product-item">
 
@@ -177,7 +177,7 @@
 
         <div class="row justify-content-md-center">
 
-            <div class="col-12 col-md-8">
+            <div class="col-12 col-md-10 col-lg-8">
 
                 <div class="contact-box-container">
 
