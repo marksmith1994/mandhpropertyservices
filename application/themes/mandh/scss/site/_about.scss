@@ -2,6 +2,11 @@
     height: 65vh;
     background-color: black;
     position: relative;
+
+    @media only screen and (max-width: 600px) {
+        height: 50vh;
+    }
+
     &::after{
         content: ' ';
         background-color: rgba(0, 0, 0, 0.5);
@@ -20,18 +25,34 @@
 .full-width_cta{
     display: flex;
 
+    @media only screen and (max-width: 600px) {
+        flex-direction: column;
+    }
+
     &.reverse{
         flex-direction: row-reverse;
+
+        @media only screen and (max-width: 600px) {
+            flex-direction: column;
+        }
     }
 
     .image-container{
         width: 50%;
         position: relative;
 
+        @media only screen and (max-width: 600px) {
+            width: 100%;
+        }
+
         img{
             width: 100%;
             max-height: 600px;
             object-fit: cover;
+
+            @media only screen and (max-width: 600px) {
+                max-height: 400px;
+            }
         }
     }
 
@@ -41,28 +62,45 @@
         color: white;
         position: relative;
 
+        @media only screen and (max-width: 600px) {
+            width: 100%;
+        }
+
         .content-container_inner{
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             width: 75%;
+
+            @media only screen and (max-width: 600px) {
+                width: 100%;
+                position: relative;
+                top: auto;
+                left: auto;
+                transform: translate(0);
+                padding: 15px;
+            }
         }
     }
 }
 
 .double-column{
-    margin: 100px 0;
+    padding: 100px 0;
     text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
+    h2{
+        color: white;
+    }
 }
 
 .review-block{
     text-align: center;
+    background-color: white;
     padding: 25px;
-    margin: 75px 0 50px;
+    margin: 25px 0 0;
     border-radius: 25px;
-    -webkit-box-shadow: 0px 0px 25px 10px rgba(0,0,0,0.15);
-    -moz-box-shadow: 0px 0px 25px 10px rgba(0,0,0,0.15);
-    box-shadow: 0px 0px 25px 10px rgba(0,0,0,0.15);
+    border: 0.1em solid #dcdcdc;
 }

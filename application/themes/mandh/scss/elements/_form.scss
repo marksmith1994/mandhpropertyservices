@@ -2,6 +2,10 @@
 
     &-area{
         margin: 100px 0;
+
+        @media only screen and (max-width: 600px) {
+            margin: 25px 0;
+        }
     }
 
     &-form{
@@ -15,9 +19,18 @@
             width: 50%;
             padding: 15px 15px 15px 0;
 
+            @media only screen and (max-width: 600px) {
+                width: 100%;
+                padding: 15px 0;
+            }
+
             &-long{
                 width: 100%;
                 padding: 15px 15px 15px 0;
+
+                @media only screen and (max-width: 600px) {
+                    padding: 15px 0;
+                }
             }
         }
 

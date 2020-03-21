@@ -98,3 +98,28 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
+
+.slick-arrow{
+    background-color: #222222!important;
+    border-radius: 41px!important;
+    height: 40px!important;
+    width: 40px!important;
+    cursor: pointer!important;
+
+    &:hover,
+    &:focus{
+        background-color: #222222!important;
+    }
+
+    &:before{
+        font-size: 28px!important;
+    }
+}
+
+.slick-prev{
+    left: -75px!important;
+}
+
+.slick-next{
+    right: -75px!important;
+}

@@ -19,6 +19,20 @@ $('.home-slider').slick({
     cssEase: 'linear'
 });
 
+
+//add in the mobile 
+$('.review-container').slick({
+    dots: true,
+    arrows: true,
+    infinite: true,
+    slidesToShow: 1,
+    slide: 'div',
+    // autoplay: true,
+    // autoplaySpeed: 3000,
+    fade: true,
+    cssEase: 'linear'
+});
+
 $("#target").click(function () {
     alert("Handler for .click() called.");
 });

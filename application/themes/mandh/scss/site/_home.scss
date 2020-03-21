@@ -76,14 +76,27 @@ body.loaded{
 .intro-para{
     margin: 100px auto;
     text-align: center;
+
+    @media only screen and (max-width: 600px) {
+        margin: 25px auto;
+    }
 }
 
 .pull-out_block{
     display: flex;
     margin: 150px 0;
+    
+    @media only screen and (max-width: 600px) {
+        margin: 0;
+        flex-direction: column;
+    }
 
     .image-container{
         width: 50%;
+        
+        @media only screen and (max-width: 600px) {
+            width: 100%;
+        }
 
         img{
             width: 100%;
@@ -96,6 +109,10 @@ body.loaded{
         width: 50%;
         position: relative;
 
+        @media only screen and (max-width: 600px) {
+            width: 100%;
+        }
+
         &_inner{
             position: absolute;
             top: 120%;
@@ -107,6 +124,16 @@ body.loaded{
             box-shadow: rgba(33, 33, 101, 0.1) 13px 13px 40px;
             border-radius: 10px;
 
+            @media only screen and (max-width: 600px) {
+                position: relative;
+                top: auto;
+                left: auto;    
+                box-shadow: none;
+                border-radius: 0;
+                transform: translate(0);
+                padding: 15px;
+            }
+
             p{
                 color: #7b7b7b;
             }
@@ -116,6 +143,10 @@ body.loaded{
     &.reverse{
         flex-direction: row-reverse;
 
+        @media only screen and (max-width: 600px) {
+            flex-direction: column;
+        }
+
         .content-container{
 
             &_inner{
@@ -123,6 +154,10 @@ body.loaded{
                 left: unset;
                 transform: translate(20%, -120%);
 
+                @media only screen and (max-width: 600px) {
+                    transform: translate(0%);
+                    right: 0%;
+                }
             }
         }
     }
@@ -200,6 +235,10 @@ body.loaded{
 
 .contact-box{
     margin: 100px 0;
+
+    @media only screen and (max-width: 600px) {
+        margin: 25px 0;
+    }
 }
 
 .contact-box-container{
@@ -208,4 +247,7 @@ body.loaded{
     padding: 50px;
     border-radius: 10px;
     color: white;
+    @media only screen and (max-width: 600px) {
+        padding: 15px;
+    }
 }
