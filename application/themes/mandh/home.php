@@ -166,7 +166,10 @@
         
         </div>
 
-
+        <?php
+            $a = new Area('Advert Block');
+            $a->display($c);
+        ?>
     </div>
 
 </div>

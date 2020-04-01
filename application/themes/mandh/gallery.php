@@ -12,24 +12,10 @@
 
 <div class="gallery-container">
 
-    <div class="image-container">
-        <img src="https://via.placeholder.com/500" />
-        <div class="button-group">
-            <a class="button black">VIEW IMAGE</a>
-        </div>
-    </div>
-    <div class="image-container">
-        <img src="https://via.placeholder.com/500" />
-        <div class="button-group">
-            <a class="button black">VIEW IMAGE</a>
-        </div>
-    </div>
-    <div class="image-container">
-        <img src="https://via.placeholder.com/500" />
-        <div class="button-group">
-            <a class="button black">VIEW IMAGE</a>
-        </div>
-    </div>
+    <?php
+        $a = new Area('Gallery Main');
+        $a->display($c);
+    ?>
     
 </div>
 

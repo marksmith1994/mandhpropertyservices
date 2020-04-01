@@ -16,7 +16,7 @@
 
         <div class="row justify-content-md-center">
 
-            <div class="col-12 col-md-8">
+            <div class="col-12 col-lg-8">
 
                 <?php
                     $a = new Area('About us');
@@ -57,7 +57,7 @@
 
         <div class="row justify-content-md-center">
 
-            <div class="col-12 col-md-8">
+            <div class="col-12 col-lg-8">
                 <h2>What people say about us</h2>
                 
                 <div class="review-container">
