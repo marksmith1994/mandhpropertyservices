@@ -23,7 +23,8 @@ if ($c->isEditMode()) {
     <?php
     $loc->popActiveContext();
 } else {
-    ?>
+
+    /*
 <script>
 $(document).ready(function(){
     $(function () {
@@ -68,47 +69,46 @@ $(document).ready(function(){
     });
 });
 </script>
+*/
+?>
+<div class="home-slider">
 
-<div class="ccm-image-slider-container ccm-block-image-slider-<?=$navigationTypeText; ?>" >
-    <div class="ccm-image-slider">
-        <div class="ccm-image-slider-inner">
-
-        <?php if (count($rows) > 0) {
+    <?php if (count($rows) > 0) {
+        foreach ($rows as $row) {
+    ?>
+    <div class="slide-container" id="ccm-image-slider-<?php echo $bID; ?>">
+        <?php
+            $f = File::getByID($row['fID']); ?>
+        <?php if (is_object($f)) {
+                $tag = Core::make('html/image', [$f, false])->getTag();
+                if ($row['title']) {
+                    $tag->alt($row['title']);
+                } else {
+                    $tag->alt("slide");
+                }
+                echo $tag; 
+                } 
         ?>
-        <ul class="rslides" id="ccm-image-slider-<?php echo $bID; ?>">
-            <?php foreach ($rows as $row) {
+        <div class="slide-content">
+            <?php if ($row['title']) {
             ?>
-                <li>
-                <?php if ($row['linkURL']) {
+            <h1><?php echo $row['title']; ?></h1> 
+            <?php
+                } ?> 
+            <p><?php echo $row['description']; ?></p>    
+            <?php if ($row['linkURL']) {
                 ?>
                     <a href="<?php echo $row['linkURL']; ?>" class="mega-link-overlay"></a>
                 <?php
             } ?>
-                <?php
-                $f = File::getByID($row['fID']); ?>
-                <?php if (is_object($f)) {
-                    $tag = Core::make('html/image', [$f, false])->getTag();
-                    if ($row['title']) {
-                        $tag->alt($row['title']);
-                    } else {
-                        $tag->alt("slide");
-                    }
-                    echo $tag; ?>
-                <?php
-                } ?>
-                <div class="ccm-image-slider-text">
-                    <?php if ($row['title']) {
-                    ?>
-                    	<h2 class="ccm-image-slider-title"><?php echo $row['title']; ?></h2>
-                    <?php
-                } ?>
-                    <?php echo $row['description']; ?>
-                </div>
-                </li>
-            <?php
-        } ?>
-        </ul>
+        </div>
+       
+    </div>
+
+
+
         <?php
+        }
     } else {
         ?>
         <div class="ccm-image-slider-placeholder">

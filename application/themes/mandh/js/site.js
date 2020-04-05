@@ -8,6 +8,14 @@ $(document).ready(function () {
         $('#overlay').toggleClass('open');
     });
 
+    $('.gallery-button').click(function () {
+        $('.gallery-modal').addClass("open");
+    });
+
+    $('.close').click(function () {
+        $('.gallery-modal').removeClass("open");
+    });
+
     $('.home-slider').slick({
         dots: true,
         infinite: true,

@@ -1,35 +1,9 @@
 <?php $view->inc('elements/header.php');?>
 
-<div class="home-slider">
-
-    <div class="slide-container">
-        <img src="<?= $view->getThemePath() ?>/images/kitchen-2.jpeg" />
-        <div class="slide-content">
-            <h1>M &amp; H Property Services</h1>    
-            <p>From tilling, contertops, installation and flooring. We will transform your old out of date kitchen to a beautiful new one.</p>    
-        </div>
-       
-    </div>
-
-    <div class="slide-container">
-        <img src="<?= $view->getThemePath() ?>/images/kitchen.jpeg" />
-        <div class="slide-content">
-            <h1>M &amp; H Property Services</h1>   
-            <p>From tiling to whole kitchen replacments, no job is to big or small.</p>    
-        </div>
-       
-    </div>
-
-    <div class="slide-container">
-        <img src="<?= $view->getThemePath() ?>/images/bathroom.jpeg" />
-        <div class="slide-content">
-            <h1>M &amp; H Property Services</h1>  
-            <p>Fitting showers, baths, sinks and toilets. There is nothing we can't do! Get in touch today and we can fit your whole new bathroom.</p>    
-        </div>
-       
-    </div>
-
-</div>
+<?php
+    $a = new Area('Home Slider');
+    $a->display($c);
+?>
 
 
 <div class="intro-para">
@@ -166,10 +140,6 @@
         
         </div>
 
-        <?php
-            $a = new Area('Advert Block');
-            $a->display($c);
-        ?>
     </div>
 
 </div>
