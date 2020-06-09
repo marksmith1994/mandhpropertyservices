@@ -16,6 +16,12 @@ $(document).ready(function () {
         $('.gallery-modal').removeClass("open");
     });
 
+
+    $(".gallery-button").click(function () {
+        var id = this.id;
+        alert(id);
+    });
+    
     $('.home-slider').slick({
         dots: true,
         infinite: true,

@@ -1,12 +1,12 @@
 <?php 
 /* Cachekey: cache/stash_default/doctrine/[concrete\core\entity\user\user$signup@[annot]][1]/ */
 /* Type: array */
-/* Expiration: 2020-04-05T20:49:15+00:00 */
+/* Expiration: 2020-06-13T04:49:00+00:00 */
 
 
 
 $loaded = true;
-$expiration = 1586119755;
+$expiration = 1592023740;
 
 $data = array();
 
@@ -14,4 +14,4 @@ $data = array();
 $data['return'] = unserialize(base64_decode('YToxOntpOjA7TzoyOToiRG9jdHJpbmVcT1JNXE1hcHBpbmdcT25lVG9PbmUiOjY6e3M6MTI6InRhcmdldEVudGl0eSI7czozNzoiXENvbmNyZXRlXENvcmVcRW50aXR5XFVzZXJcVXNlclNpZ251cCI7czo4OiJtYXBwZWRCeSI7czo0OiJ1c2VyIjtzOjEwOiJpbnZlcnNlZEJ5IjtOO3M6NzoiY2FzY2FkZSI7YToxOntpOjA7czo2OiJyZW1vdmUiO31zOjU6ImZldGNoIjtzOjQ6IkxBWlkiO3M6MTM6Im9ycGhhblJlbW92YWwiO2I6MDt9fQ=='));
 
 /* Child Type: integer */
-$data['createdOn'] = 1585739326;
+$data['createdOn'] = 1591643990;

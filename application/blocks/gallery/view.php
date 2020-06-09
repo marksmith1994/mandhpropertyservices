@@ -64,7 +64,7 @@ if (is_object($f) && $f->getFileID()) {
 echo '</div>';
 ?>
 
-<div class="gallery-modal">
+<div id="gallery-modal-<?php echo $bID ?>" class="gallery-modal">
     <span class="close">X</span>
     <?php
         if (is_object($f) && $f->getFileID()) {
