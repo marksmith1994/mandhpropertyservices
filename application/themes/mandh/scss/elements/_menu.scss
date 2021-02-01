@@ -1,5 +1,5 @@
 $color-background: #F5F5F5;
-$color-main: #222222;
+$color-main: #6f665f;
 $color-active: #FFF;
 $color-link: #FFF;
 
@@ -18,7 +18,7 @@ $button-width: 35px;
 
     .button_container {
         position: absolute;
-        top: 25px;
+        top: 60px;
         right: 25px;
         height: $button-height;
         width: $button-width;
@@ -108,7 +108,7 @@ $button-width: 35px;
     }
     
     &.open {
-        opacity: .9;
+        opacity: .97;
         visibility: visible;
         height: 100%;
         
@@ -141,7 +141,6 @@ $button-width: 35px;
         top: 50%;
         transform: translateY(-50%);
         font-size: 50px;
-        font-family: 'Vollkorn', serif;
         font-weight: 400;
         text-align: center;
         z-index: 100;
@@ -168,6 +167,8 @@ $button-width: 35px;
             color: $color-link;
             text-decoration: none;
             overflow: hidden;
+            font-family: 'Crimson Text', serif;
+            text-transform: uppercase;
             
             &:hover:after,
             &:focus:after,

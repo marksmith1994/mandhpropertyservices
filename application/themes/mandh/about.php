@@ -10,26 +10,6 @@
 
 </div>
 
-<div class="intro-para">
-
-    <div class="container ">
-
-        <div class="row justify-content-md-center">
-
-            <div class="col-12 col-lg-8">
-
-                <?php
-                    $a = new Area('About us');
-                    $a->display($c);
-                ?>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</div>
 
 <div class="full-width_cta">
 
@@ -72,6 +52,11 @@
                         <h4>Kirsty Scally</h4>
                     </div>
 
+                    <div class="review-block">
+                        <p>"Had our kitchen floor tiled. Old tiles hacked off and new laid. Hard working, on time and a superb job!! Highly recommended"</p>
+                        <h4>Paul Ceri Francis</h4>
+                    </div>
+
                 </div>
 
             </div>
@@ -101,8 +86,6 @@
     </div>
 
 </div>
-
-
 
 <div class="contact-box">
 

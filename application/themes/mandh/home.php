@@ -77,12 +77,12 @@
             <div class="product-item">
 
                 <div class="image">
-                    <img src="<?= $view->getThemePath() ?>/images/shower.jpeg" />
+                    <img alt="bathrooms" src="<?= $view->getThemePath() ?>/images/shower.jpeg" />
                 </div>
 
                 <div class="content">
                     <h3>Bathrooms</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi inventore numquam, illum modi dignissimos dolor doloremque id, vitae pariatur ea, nulla saepe praesentium exercitationem ad tempore culpa deserunt omnis repellendus!</p>
+                    <p>A bathroom should be more than just a necessity - a place to unwind and relax. M &amp; H Property Services aim to create a truly beautiful bathroom experience, leaving you refreshed and energised.</p>
                 </div>
 
             </div>
@@ -94,12 +94,12 @@
             <div class="product-item">
 
                 <div class="image">
-                    <img src="<?= $view->getThemePath() ?>/images/oven.jpeg" />
+                    <img alt="kitchens" src="<?= $view->getThemePath() ?>/images/oven.jpeg" />
                 </div>
 
                 <div class="content">
                     <h3>Kitchens</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi inventore numquam, illum modi dignissimos dolor doloremque id, vitae pariatur ea, nulla saepe praesentium exercitationem ad tempore culpa deserunt omnis repellendus!</p>
+                    <p>Whether you need a whole new kitchen or fancy a new worktop, M &amp; H Property Services are the team for you. No Kitchen is too big for our team to fit.</p>
                 </div>
 
             </div>
@@ -111,12 +111,12 @@
             <div class="product-item">
 
                 <div class="image">
-                    <img src="<?= $view->getThemePath() ?>/images/livingroom-2.jpeg" />
+                    <img alt="flooring" src="<?= $view->getThemePath() ?>/images/livingroom-2.jpeg" />
                 </div>
 
                 <div class="content">
                     <h3>Flooring</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi inventore numquam, illum modi dignissimos dolor doloremque id, vitae pariatur ea, nulla saepe praesentium exercitationem ad tempore culpa deserunt omnis repellendus!</p>
+                    <p>As the saying goes, start from the ground up. Whether its a new patio, or a wood floor for the lounge, helping you start and finish your dream project is what we aim to achieve at M &amp; H Property Services.</p>
                 </div>
 
             </div>
@@ -128,12 +128,12 @@
             <div class="product-item">
 
                 <div class="image">
-                    <img src="<?= $view->getThemePath() ?>/images/shower-2.jpeg" />
+                    <img alt="Tiling" src="<?= $view->getThemePath() ?>/images/shower-2.jpeg" />
                 </div>
 
                 <div class="content">
                     <h3>Tiling</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi inventore numquam, illum modi dignissimos dolor doloremque id, vitae pariatur ea, nulla saepe praesentium exercitationem ad tempore culpa deserunt omnis repellendus!</p>
+                    <p>Struggled to find someone to do a complete job in the past? M &amp; H Property Services pride ourselves with doing a complete job. From fitting whole kitchens and bathrooms, or just tiling your new shower. No job is too small.</p>
                 </div>
 
             </div>

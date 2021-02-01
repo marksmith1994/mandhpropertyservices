@@ -5,19 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="<?= $view->getThemePath() ?>/css/bootstrap.css">
-    <link rel="stylesheet" href="<?= $view->getThemePath() ?>/css/site.css">
+    <title>M &amp; H Property Services | Bridgend, South Wales</title>
+    <link rel="stylesheet"  href="<?= $view->getThemePath() ?>/css/bootstrap.css">
+    <link rel="stylesheet" href="<?= $view->getThemePath() ?>/css/site-dist.css?v1.2">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap" rel="stylesheet">
      <?php Loader::element('header_required') ?> 
 </head>
 
 <body>
 <div class="<?= $c->getPageWrapperClass() ?>">
 <header>
-    <div class="main-logo">
-        <a href="/"><img src="https://via.placeholder.com/150x100" /></a>
+    <div class="main-logo site-logo">
+        <a href="/"><img src="<?= $view->getThemePath() ?>/images/M_H-12.svg" /></a>
     </div>
 
     <div class="button_container" id="toggle">

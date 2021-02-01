@@ -1,6 +1,7 @@
 <?php 
 defined('C5_EXECUTE') or die("Access Denied.");
 ?>
+
 <div class="hero">
 
     <div class="hero-content">
@@ -17,43 +18,44 @@ defined('C5_EXECUTE') or die("Access Denied.");
 
         <div class="row justify-content-md-center">
 
-            <div class="col-12 col-md-8">
+            <div class="col-12 col-lg-8">
 
                 <div class="contact-form">
 
                     <form method="post" action="<?=$controller->action('submit')?>">
 
                         <h2>Want to know more?</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse ullam, repudiandae animi consequuntur</p>
+                        <p>Please fill out the form with your contact details and how we can help and a member of the team will get in touch as soon as we are able.</p>
 
                         <div class="field">
-                            <label>First name*</label>
-                            <input name="firstName" type="text" />
+                            <label for="name">Name</label>
+                            <input id="name" name="name" type="text" required/>
+                            <span><?php echo $nameErr; ?></span>
                         </div>
 
                         <div class="field">
-                            <label>Last name*</label>
-                            <input name="lastName" type="text" />
+                            <label for="email">Email address</label>
+                            <input id="email" name="email" type="email" />
                         </div>
 
                         <div class="field">
-                            <label>Email address*</label>
-                            <input name="email" type="email" />
+                            <label for="number">Phone number</label>
+                            <input id="number" name="number" type="text" required/>
                         </div>
 
                         <div class="field">
-                            <label>Phone number*</label>
-                            <input name="number" type="text" />
-                        </div>
-
-                        <div class="field-long">
-                            <label for="">Subject</label>
-                            <input name="subject" type="text">
+                            <label for="subject">Subject</label>
+                            <input id="subject" name="subject" type="text" required/>
+                            <span><?php echo $captchaError; ?></span>
                         </div>
                         
                         <div class="field-long">
-                            <label>Message*</label>
-                            <textarea name="message" id=""></textarea>
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message"></textarea>
+                        </div>
+
+                        <div class="field-long">
+                            <div class="g-recaptcha" data-sitekey="6Lev1aIZAAAAAAZQOa-pcDEuiv7olvVbTd26ionJ"></div>
                         </div>
 
                         <div class="field-long">
@@ -65,36 +67,18 @@ defined('C5_EXECUTE') or die("Access Denied.");
                 </div>
 
             </div>
-        </div>
 
-        <div id="meettheteam" class="meet-team">
+            <div class="col-12 col-lg-4">
+                <h3>Contact Us</h3>
+                <p>Mark - <u><a href="tel:07552810326">0755 281 0326</a></u><br />
+                Huw - <u><a href="tel:07437924553">0743 792 4553</a></u><br />
+                <u><a href="mailto:mhpropertyservices101@gmail.com">mhpropertyservices101@gmail.com</a></u></p>
 
-            <div class="row justify-content-md-center">
-            
-                <div class="col-12">
-
-                    <h2>Meet the team</h2>
-
-                    <div class="team-container"> 
-
-                        <div class="team-member"> 
-                            <?php $a = new Area('Team member photo'); $a->display($c); ?> 
-                            <?php $a = new Area('Team Member Name'); $a->display($c); ?>
-                            <?php $a = new Area('Team Member Number'); $a->display($c); ?>
-                            <?php $a = new Area('Team Member Email'); $a->display($c); ?> 
-                        </div>
-
-                        <div class="team-member"> 
-                            <?php $a = new Area('Team member photo 2'); $a->display($c); ?> 
-                            <?php $a = new Area('Team Member Name 2'); $a->display($c); ?>
-                            <?php $a = new Area('Team Member Number 2'); $a->display($c); ?>
-                            <?php $a = new Area('Team Member Email 2'); $a->display($c); ?> 
-                        </div>
-
-                    </div>
-
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/mandhpropertyservices/"><svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg></a>
+                    <a href="https://www.instagram.com/mandhpropertyservices/"><svg class="icon icon-instagram"><use xlink:href="#icon-instagram"></use></svg></a>
                 </div>
-
             </div>
 
         </div>
@@ -102,3 +86,13 @@ defined('C5_EXECUTE') or die("Access Denied.");
     </div>
 
 </div>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+
+<!-- <script>
+function initMap() {
+    var uluru = {lat: 51.5026997, lng: -3.5982323};
+    var map = new google.maps.Map(document.getElementById('map'), {zoom: 16, center: uluru});
+    var marker = new google.maps.Marker({position: uluru, map: map});
+}
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9SW87bN9ec8POB8zKNy4drDnjJpvN-WY&callback=initMap"></script> -->

@@ -1,4 +1,6 @@
 //@prepros-prepend plugins/slick.js
+//@prepros-prepend plugins/masonary.js
+
 
 $(document).ready(function () {
     $('body').addClass('loaded');
@@ -61,5 +63,10 @@ $(document).ready(function () {
     $("#target").click(function () {
         alert("Handler for .click() called.");
     });
-
+    
+    $('.grid').masonry({
+        // options
+        itemSelector: '.grid-item',
+        columnWidth: 200
+    });
 });

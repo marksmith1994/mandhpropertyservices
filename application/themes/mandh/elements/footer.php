@@ -17,14 +17,14 @@
             ?>
         </div>
 
-        <div class="footer-logo">
-            <a href="/"><img src="https://via.placeholder.com/150x100" /></a>
+        <div class="footer-logo site-logo">
+            <a href="/"><img src="<?= $view->getThemePath() ?>/images/M_H-12.svg" /></a>
         </div>
 
 
         <div class="footer-items">
             <div class="copyright">
-                <p>&copy;M &amp; H Proptery Services</p>
+                <p>&copy;M &amp; H Property Services</p>
             </div>
 
             <div class="social-icons">
